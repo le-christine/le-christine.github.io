@@ -1,0 +1,14 @@
+.device {
+  background-size: contain;
+  width: 500px;
+  height: 300px;
+  background-image: url('../static/media/browser-window-no-url.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.device-row {
+  display: flex;
+  flex-direction: row;
+}
