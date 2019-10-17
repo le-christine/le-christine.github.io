@@ -1,27 +1,71 @@
-<html>
-  <head>
-   <title>codebar.io - Exercise 1: Wish List</title>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christine Le</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/24e1f3bbee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1> Christine Le</h1>
+    <nav>
+      <a href="#">about</a>
+      <a href="#projects">projects</a>
+      <a href="#">resume</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
 
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </head>
-  <body>
-    <header>
-      <img id="logo" src='https://raw.github.com/codebar/planner/master/app/assets/images/logo.png' width='200' />
-    </header>
-    <div id="container">
-      <h1>Wish List</h1>
-      <ol id="items">
-        <!-- Items will be added here -->
-      </ol>
-      <span class="total"></span>
-      <br/>
-      <input type="text" id="item"/>
-      <button id="add-to-list">Add to list</button>
+  <div class="brand-statement-bg">
+    <div class="brand-statement">
+      <h2>Full Stack Developer based in NYC passionate about making
+        tech accessible to all.</h2>
+        <div class = "social-links">
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-medium"></i>
+        </div>
+      </div>
     </div>
-    <footer>
-      <div id="content"> by <a href="http://codebar.io">codebar</a> </div>
-    </footer>
+
+    <h2 id ="projects">[<span class="section">projects</span>]</h2>
+
+    <div class="device-wrapper">
+      <div class="device-row">
+        <div class="device">
+        </div>
+        <div class="device">
+        </div>
+        <div class="device">
+        </div>
+      </div>
+      <div class="device-row">
+        <div class="device">
+        </div>
+        <div class="device">
+        </div>
+        <div class="device">
+        </div>
+      </div>
+    </div>
+
+    <h2 id = "contact">[<span class="section">contact</span>]</h2>
+    <div class="contact-form">
+      <div class="envelope flap">
+      </div>
+      <div class="envelope letter">
+        <h3>Let's get in touch!</h3>
+        <input type="text" class="contact-name" placeholder="name">
+        </input>
+        <input type="text" class="contact-email" placeholder="email">
+        </input>
+        <textarea placeholder="message">
+        </textarea>
+        <button type="submit" value="Submit">Send
+        </button>
+      </div>
+    </div>
   </body>
-</html>
+  </html>
