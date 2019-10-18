@@ -1,5 +1,81 @@
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Raleway, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav>a {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.brand-statement-bg {
+  height: 500px;
+  background-image: url('../static/media/patterns-png-transparent.png');
+  background-repeat: repeat-x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.brand-statement {
+  width: 808px;
+  height: 318px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.brand-statement>h2 {
+  font-family: Glegoo, sans-serif;
+  font-size: 35px;
+}
+
+.social-links {
+  font-size: 35px;
+  padding-bottom: 5%;
+}
+
+#projects, #contact {
+  text-align: center;
+  font-size: 40px;
+}
+
+.section {
+  text-transform: uppercase;
+  font-family: Glegoo, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.device-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .device {
-  background-size: contain;
+  background-size: cover;
   width: 500px;
   height: 300px;
   background-image: url('../static/media/browser-window-no-url.svg');
@@ -7,8 +83,30 @@
   background-repeat: no-repeat;
 }
 
-
 .device-row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-form {
+  height: 600px;
+  background-image: url('../static/media/patterns-png-transparent.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.letter {
+  font-family: Satisfy, sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  width: 1056px;
+  height: 300px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
 }
