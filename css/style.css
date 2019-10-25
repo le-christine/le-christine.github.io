@@ -2,6 +2,8 @@
 header {
   display: flex;
   justify-content: space-around;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 h1 {
@@ -51,12 +53,14 @@ nav>a {
 
 .social-links {
   font-size: 35px;
-  padding-bottom: 5%;
+  padding: 5% 0%;
 }
 
 #projects, #contact {
   text-align: center;
   font-size: 40px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .section {
@@ -68,25 +72,42 @@ nav>a {
   padding-right: 2%;
 }
 
-.device-wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.device {
-  background-size: cover;
-  width: 500px;
-  height: 300px;
-  background-image: url('../static/media/browser-window-no-url.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .device-row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 4% 0%;
+}
+
+
+.project-mock {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 280px;
+  position: relative;
+  top: 20px;
+}
+
+.project {
+
+}
+
+.tearoom {
+  background-image: url('../static/media/tearoom.png');
+}
+
+.spottunes {
+  background-image: url('../static/media/spottunes-landing.png');
+}
+
+.dentist {
+  background-image: url('../static/media/dentist-office.png');
+}
+
+.weather {
+  background-image: url('../static/media/weather.png');
 }
 
 .contact-form {
@@ -95,95 +116,67 @@ nav>a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-
-/* .flap {
-  width: 0;
-  height: 0;
-  border-left: 525px solid transparent;
-  border-right: 525px solid transparent;
-  border-bottom: 100px solid white;
+.postcard-outer {
+  padding: 30px;
+  background-color: white;
+  width: 1000px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1;
 }
 
-.letter {
-  font-family: Satisfy, sans-serif;
-  font-size: 40px;
-  line-height: 50px;
-  text-align: center;
-  width: 1056px;
-  height: 300px;
-  background: #fff;
+.postcard-inner {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   flex-direction: column;
-} */
-
-
-.envelope {
-  /* position: relative; */
-  margin: 50px auto 0;
-  width: 490px;
-  height: 66px;
-  background: #8D99AE;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 0 1px #8D99AE inset;
-}
-.envelope:before,
-.envelope:after {
-  content: '';
-  /* position: absolute; */
-  width: 0;
-  height: 0;
-  border: 0 solid transparent;
-  border-width: 165px 245px;
-}
-
-.envelope:before {
-  border-bottom-color: #8D99AE;
-  top: -1000%;
-  left: 0px;
-}
-.envelope:after {
-  border-right-color: #EDF2F4;
-  border-left-color: #EFF4F7;
-  border-bottom-color: #EFF4F7;
-  top: 0;
-  border-radius: 0 0 5px 5px;
-  transform: rotate(360deg);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
-}
-
-.paper {
-  background: #fff;
-  width: 435px;
-  height: 330px;
-  margin: 0 auto;
-  border-radius: 5px;
-  /* position: absolute; */
-  left: 30px;
-  top: -90px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
-}
-
-.paper:before,
-.paper:after {
-  content: '';
-  /* position: absolute; */
-  left: 60px;
-  background: #e3f1fc;
-  height: 20px;
-  border-radius: 5px;
-}
-
-.letter {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  justify-content: center;
   align-items: center;
+
 }
+
+.postcard-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.postcard-form>h3{
+    font-family: Satisfy, sans-serif;
+      font-size: 40px;
+}
+
+.postcard-contact {
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.contact-name, .contact-email, .contact-msg {
+  height: 30px;
+}
+
+input[type="text"]
+{
+    font-size:20px;
+}
+
+.contact-email::placeholder, .contact-msg::placeholder {
+  font-size: 20px;
+}
+
+
+.contact-msg {
+  height: 100px;
+}
+
 
 button {
   width: 100px;
+}
+
+a {
+  color: black;
 }
