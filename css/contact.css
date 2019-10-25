@@ -1,32 +1,54 @@
-#contact {
-	max-width: 970px;
-	margin: auto;
+.maincontainer {
+	position: absolute;
+  width: 100%;
+	padding: 5% 0%;
+	background-image: url('../static/media/patterns-png-transparent.png');
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-#contact p {
-	text-align: center;
-	font-family: helvetica, arial;
-	font-size: 16px;
-	font-weight: 200;
-  color: white;
-}
-
-
-#card{
-background: white;
-	margin: auto;
+.card{
+  position: relative;
 	height: 400px;
 	width: 650px;
-	border: solid 3px black;
-	position: relative;
-
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
 }
 
-#leftbox{
-	float: left;
-	width: 49%;
-	overflow: hidden;
+.card-flipped {
+	transform: rotateY(180deg);
+}
 
+#postcard-front {
+	border: solid 3px black;
+	background: white;
+	background-image: url('../static/media/drawn-nyc-skyline.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+	position: absolute;
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+
+#postcard-back {
+	border: solid 3px black;
+	background: white;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+	position: absolute;
+	overflow: hidden;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	display: flex;
 }
 
 textarea {
@@ -34,19 +56,16 @@ textarea {
 	border:none;
 	resize: none;
 	font-size: 12px;
-font-family: helvetica, arial;
+	font-family: Raleway, sans-serif;
+	color: black;
 }
-
-
 
 #rightbox {
 	float: right;
 	width: 50%;
-
 }
 
-
-#send input{
+.send{
 	float: right;
 	display: block;
 	margin: 20px;
@@ -58,9 +77,8 @@ font-family: helvetica, arial;
 	border-radius: 5px;
 	font-size: 16px;
 	font-weight: bold;
-	font-family: helvetica, arial;
+	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
-
 }
 
 .line {
@@ -73,6 +91,14 @@ font-family: helvetica, arial;
 	padding-top: 180px;
 }
 
+.fa-paper-plane {
+	font-size: 40px;
+}
+
+.send:hover {
+	background-color: #6d758a;
+}
+
 #input input {
 	margin: 20px 20px 40px 30px;
 	display: block;
@@ -80,5 +106,5 @@ font-family: helvetica, arial;
 	font-size: 16px;
 	border: none;
 	border-bottom: dotted 2px black;
-font-family: helvetica;
+	font-family: Raleway, helvetica;
 }

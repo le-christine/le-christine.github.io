@@ -12,7 +12,7 @@
 </head>
 <body>
   <header>
-    <h1> Christine Le</h1>
+    <h1><a href="/index.html">Christine Le</a></h1>
     <nav>
       <a href="/about.html">about</a>
       <a href="#projects">projects</a>
@@ -26,9 +26,9 @@
       <h2>Full Stack Developer based in NYC<br/> passionate about making
         tech<br/> accessible to all.</h2>
         <div class = "social-links">
-          <a href ="mailto:christine.le244@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
           <a href="https://www.linkedin.com/in/christinele3/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href ="https://github.com/le-christine" target="_blank"><i class="fab fa-github"></i></a>
+          <a href ="https://medium.com/@christine_le" target="_blank"><i class="fab fa-medium"></i></a>
         </div>
       </div>
     </div>
@@ -37,48 +37,51 @@
 
     <div class="device-wrapper">
       <div class="device-row">
-          <div class="project"><img class="project-mock"/></div>
-          <div class="project"><img class="project-mock tearoom"/></div>
-          <div class="project"><img class="project-mock "/></div>
+        <div class="project"><img class="project-mock"/></div>
+        <div class="project"><img class="project-mock"/></div>
+        <div class="project"><img class="project-mock tearoom"/></div>
       </div>
       <div class="device-row">
-          <div class="project"><img class="project-mock dentist"/></div>
-          <div class="project"><img class="project-mock spottunes"/></div>
-          <div class="project"><img class="project-mock weather"/></div>
+        <div class="project"><img class="project-mock dentist"/></div>
+        <div class="project"><img class="project-mock spottunes"/></div>
+        <div class="project"><img class="project-mock weather"/></div>
       </div>
     </div>
 
-    <h2 id = "contact">[<span class="section">contact</span>]</h2>
+    <h2 id = "contact">[<span class="section">contact me</span>]</h2>
 
-    <div class="contact-form">
-      <div id="contact">
+    <div class="maincontainer">
 
-            <div id="card">
-              <form>
-                <div id="leftbox">
-                  <textarea name="message" COLS="35" ROWS="25" placeholder="Your message" required></textarea>
+      <div class="card">
+        <div id="postcard-front">
+            <button onClick="flip()" class="send"><i class="fa fa-paper-plane"></i></button>
+        </div>
 
-                </div>
-                <div id="rightbox">
-                  <div id="send">
-                    <input class="sendbutton" type="submit" value="Send">
-                  </div>
-                  <div class="line">
-                    <div id="input">
+        <div id="postcard-back">
+          <div id="leftbox">
+            <textarea class="userMsg" name="message" COLS="35" ROWS="25" placeholder="Your message" required>
+            </textarea>
+          </div>
 
-                      <input type="text" name="name" placeholder="Name">
-                      <input type="email" name="email" placeholder="E-mail" required>
-                    </div>
-                  </div>
-                </div>
-              </form>
+          <div id="rightbox">
+            <button onClick="flipBack()" class="send">Send
+            </button>
+            <div id="input">
+              <input class="userName" type="text" name="name" placeholder="Name">
+              <input class="userEmail" type="email" name="email" placeholder="E-mail" required>
             </div>
-      		</div>
-
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
     </div>
-<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
-<script src="js/firebase-sdk.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+    <script src="js/firebase-sdk.js"></script>
+    <script src="js/test-api-call.js"></script>
+    <script src="js/post-card-flip.js"></script>
 
-</body>
-</html>
+  </body>
+  </html>

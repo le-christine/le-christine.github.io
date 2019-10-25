@@ -1,4 +1,3 @@
-
 header {
   display: flex;
   justify-content: space-around;
@@ -11,6 +10,9 @@ h1 {
   font-family: Raleway, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
 nav {
   display: flex;
   align-items: center;
@@ -108,73 +110,6 @@ nav>a {
 
 .weather {
   background-image: url('../static/media/weather.png');
-}
-
-.contact-form {
-  height: 600px;
-  background-image: url('../static/media/patterns-png-transparent.png');
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.postcard-outer {
-  padding: 30px;
-  background-color: white;
-  width: 1000px;
-  height: 500px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1;
-}
-
-.postcard-inner {
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.postcard-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.postcard-form>h3{
-    font-family: Satisfy, sans-serif;
-      font-size: 40px;
-}
-
-.postcard-contact {
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.contact-name, .contact-email, .contact-msg {
-  height: 30px;
-}
-
-input[type="text"]
-{
-    font-size:20px;
-}
-
-.contact-email::placeholder, .contact-msg::placeholder {
-  font-size: 20px;
-}
-
-
-.contact-msg {
-  height: 100px;
-}
-
-
-button {
-  width: 100px;
 }
 
 a {
