@@ -1,6 +1,6 @@
 .maincontainer {
 	position: absolute;
-  width: 100%;
+	width: 100%;
 	padding: 5% 0%;
 	background-image: url('../static/media/patterns-png-transparent.png');
 	display: flex;
@@ -10,12 +10,12 @@
 }
 
 .card{
-  position: relative;
+	position: relative;
 	height: 400px;
 	width: 650px;
-  border-radius: 10px;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
 }
 
 .card-flipped {
@@ -52,10 +52,10 @@
 }
 
 textarea {
-	margin: 20px;
-	border:none;
 	resize: none;
-	font-size: 12px;
+	font-size: 20px;
+	width: 90%;
+	height: 350px;
 	font-family: Raleway, sans-serif;
 	color: black;
 }
@@ -63,6 +63,12 @@ textarea {
 #rightbox {
 	float: right;
 	width: 50%;
+}
+
+#leftbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .send{
@@ -75,7 +81,7 @@ textarea {
 	color: white;
 	border-style: none;
 	border-radius: 5px;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: bold;
 	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
