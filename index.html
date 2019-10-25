@@ -4,14 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Christine Le</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link href="https://fonts.googleapis.com/css?family=Glegoo:400,700|Raleway|Satisfy&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/24e1f3bbee.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <h1> Christine Le</h1>
+    <h1><a href="/index.html">Christine Le</a></h1>
     <nav>
-      <a href="#">about</a>
+      <a href="/about.html">about</a>
       <a href="#projects">projects</a>
       <a href="#">resume</a>
       <a href="#contact">contact</a>
@@ -20,12 +23,12 @@
 
   <div class="brand-statement-bg">
     <div class="brand-statement">
-      <h2>Full Stack Developer based in NYC passionate about making
-        tech accessible to all.</h2>
+      <h2>Full Stack Developer based in NYC<br/> passionate about making
+        tech<br/> accessible to all.</h2>
         <div class = "social-links">
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-github"></i>
-          <i class="fab fa-medium"></i>
+          <a href="https://www.linkedin.com/in/christinele3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href ="https://github.com/le-christine" target="_blank"><i class="fab fa-github"></i></a>
+          <a href ="https://medium.com/@christine_le" target="_blank"><i class="fab fa-medium"></i></a>
         </div>
       </div>
     </div>
@@ -34,38 +37,51 @@
 
     <div class="device-wrapper">
       <div class="device-row">
-        <div class="device">
-        </div>
-        <div class="device">
-        </div>
-        <div class="device">
-        </div>
+        <div class="project"><img class="project-mock"/></div>
+        <div class="project"><img class="project-mock"/></div>
+        <div class="project"><img class="project-mock tearoom"/></div>
       </div>
       <div class="device-row">
-        <div class="device">
+        <div class="project"><img class="project-mock dentist"/></div>
+        <div class="project"><img class="project-mock spottunes"/></div>
+        <div class="project"><img class="project-mock weather"/></div>
+      </div>
+    </div>
+
+    <h2 id = "contact">[<span class="section">contact me</span>]</h2>
+
+    <div class="maincontainer">
+
+      <div class="card">
+        <div id="postcard-front">
+            <button onClick="flip()" class="send"><i class="fa fa-paper-plane"></i></button>
         </div>
-        <div class="device">
-        </div>
-        <div class="device">
+
+        <div id="postcard-back">
+          <div id="leftbox">
+            <textarea class="userMsg" name="message" COLS="35" ROWS="25" placeholder="Your message" required>
+            </textarea>
+          </div>
+
+          <div id="rightbox">
+            <button onClick="flipBack()" class="send">Send
+            </button>
+            <div id="input">
+              <input class="userName" type="text" name="name" placeholder="Name">
+              <input class="userEmail" type="email" name="email" placeholder="E-mail" required>
+            </div>
+          </div>
+          <div>
+          </div>
         </div>
       </div>
     </div>
 
-    <h2 id = "contact">[<span class="section">contact</span>]</h2>
-    <div class="contact-form">
-      <div class="envelope flap">
-      </div>
-      <div class="envelope letter">
-        <h3>Let's get in touch!</h3>
-        <input type="text" class="contact-name" placeholder="name">
-        </input>
-        <input type="text" class="contact-email" placeholder="email">
-        </input>
-        <textarea placeholder="message">
-        </textarea>
-        <button type="submit" value="Submit">Send
-        </button>
-      </div>
-    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+    <script src="js/firebase-sdk.js"></script>
+    <script src="js/test-api-call.js"></script>
+    <script src="js/post-card-flip.js"></script>
+
   </body>
   </html>

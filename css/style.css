@@ -1,14 +1,117 @@
-.device {
-  background-size: contain;
-  width: 500px;
-  height: 300px;
-  background-image: url('../static/media/browser-window-no-url.svg');
-  background-position: center;
-  background-repeat: no-repeat;
+header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
+h1 {
+  font-size: 60px;
+  font-family: Raleway, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav>a {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  color: black;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.brand-statement-bg {
+  height: 500px;
+  background-image: url('../static/media/patterns-png-transparent.png');
+  background-repeat: repeat-x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.brand-statement {
+  width: 808px;
+  height: 318px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.brand-statement>h2 {
+  font-family: Glegoo, sans-serif;
+  font-size: 35px;
+}
+
+.social-links {
+  font-size: 35px;
+  padding: 5% 0%;
+}
+
+#projects, #contact {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.section {
+  text-transform: uppercase;
+  font-family: Glegoo, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
 
 .device-row {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 4% 0%;
+}
+
+
+.project-mock {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 280px;
+  position: relative;
+  top: 20px;
+}
+
+.project {
+
+}
+
+.tearoom {
+  background-image: url('../static/media/tearoom.png');
+}
+
+.spottunes {
+  background-image: url('../static/media/spottunes-landing.png');
+}
+
+.dentist {
+  background-image: url('../static/media/dentist-office.png');
+}
+
+.weather {
+  background-image: url('../static/media/weather.png');
+}
+
+a {
+  color: black;
 }

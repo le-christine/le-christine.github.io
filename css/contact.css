@@ -1,0 +1,110 @@
+.maincontainer {
+	position: absolute;
+  width: 100%;
+	padding: 5% 0%;
+	background-image: url('../static/media/patterns-png-transparent.png');
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card{
+  position: relative;
+	height: 400px;
+	width: 650px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.card-flipped {
+	transform: rotateY(180deg);
+}
+
+#postcard-front {
+	border: solid 3px black;
+	background: white;
+	background-image: url('../static/media/drawn-nyc-skyline.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+	position: absolute;
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+
+#postcard-back {
+	border: solid 3px black;
+	background: white;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 400px;
+	width: 650px;
+	position: absolute;
+	overflow: hidden;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	display: flex;
+}
+
+textarea {
+	margin: 20px;
+	border:none;
+	resize: none;
+	font-size: 12px;
+	font-family: Raleway, sans-serif;
+	color: black;
+}
+
+#rightbox {
+	float: right;
+	width: 50%;
+}
+
+.send{
+	float: right;
+	display: block;
+	margin: 20px;
+	height: 90px;
+	width: 70px;
+	background-color: #404040;
+	color: white;
+	border-style: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Raleway, sans-serif;
+	letter-spacing: 2px;
+}
+
+.line {
+	margin-top: 10%;
+	height: 340px;
+	border-left: solid 1px black;
+}
+
+#input {
+	padding-top: 180px;
+}
+
+.fa-paper-plane {
+	font-size: 40px;
+}
+
+.send:hover {
+	background-color: #6d758a;
+}
+
+#input input {
+	margin: 20px 20px 40px 30px;
+	display: block;
+	width: 265px;
+	font-size: 16px;
+	border: none;
+	border-bottom: dotted 2px black;
+	font-family: Raleway, helvetica;
+}
