@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBUTUCpZn8vEq1k38CRAZ-qtpOlPOaJdfU",
+let firebaseConfig = {
+    apiKey: 'AIzaSyBUTUCpZn8vEq1k38CRAZ-qtpOlPOaJdfU',
     authDomain: "my-personal-portfolio-b92bd.firebaseapp.com",
     projectId: "my-personal-portfolio-b92bd"
   };
@@ -27,18 +27,4 @@ const postAnEmail = () => {
     console.error("Error adding document: ", error);
 });
 
-}
-
-const cleanUpAll = () => {
-db.collection("messages").get()
-  .then(function(querySnapshot) {
-        var batch = db.batch();
-
-        querySnapshot.forEach(function(doc) {
-            batch.delete(doc.ref);
-        });
-        return batch.commit();
-  }).then(function() {
-      console.log('deleted!')
-  });
 }
