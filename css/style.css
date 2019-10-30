@@ -148,6 +148,7 @@ a {
 
    .brand-statement {
      height: 150px;
+     width: 100%;
    }
 
    .brand-statement>h2, .social-links, nav>a {
@@ -157,7 +158,7 @@ a {
    header {
      flex-direction: column;
      align-items: center;
-     width: 450px;
+     width: 100%;
      margin-top: 10%;
      margin-bottom: 10%;
    }
@@ -171,12 +172,65 @@ a {
      margin: 0% 2%;
    }
 
-
-  .card {
-     display: none;
-   }
-
    .maincontainer {
      height: 60%;
+   }
+
+   .card {
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+   }
+
+
+   #postcard-front, #postcard-back {
+     width: 300px;
+     height: 250px;
+   }
+
+   .send{
+     width: 10%;
+     height: 10%;
+     margin: 10px;
+   }
+
+   .fa-paper-plane {
+   	font-size: 10px;
+   }
+
+   #postcard-back {
+     display: flex;
+     flex-direction: column;
+   }
+
+   textarea {
+     width: 250px;
+     height: 100px;
+     margin-top: 10px;
+     border: 1px solid black;
+     font-size: 15px;
+     overflow: auto;
+   }
+
+   #rightbox {
+     width: 250px;
+     height: 100px;
+     float: none;
+   }
+
+   #input {
+     padding: 0;
+   }
+
+   #input>input{
+     width: 50px;
+     width: 100px;
+     font-size: 15px;
+   }
+
+   .back-send {
+     width: 50px;
+    height: 50px;
+    font-size: 10px;
    }
  }
