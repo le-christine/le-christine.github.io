@@ -2,8 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
 header {
   display: flex;
   justify-content: space-around;
@@ -17,8 +15,9 @@ h1 {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -67,8 +66,14 @@ nav>a {
 #projects, #contact {
   text-align: center;
   font-size: 40px;
-  padding-top: 2%;
-  padding-bottom: 2%;
+}
+
+#projects {
+  margin-top: 7%;
+}
+
+#contact {
+  margin: 7% 0%;
 }
 
 .section {
@@ -76,8 +81,11 @@ nav>a {
   font-family: Glegoo, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 0% 2%;
+}
+
+.device-wrapper {
+
 }
 
 .device-row {
@@ -88,17 +96,13 @@ nav>a {
 
 
 .project-mock {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 500px;
+  width: 400px;
   height: 280px;
   position: relative;
   top: 20px;
-}
-
-.project {
-
 }
 
 .tearoom {
@@ -117,9 +121,15 @@ nav>a {
   background-image: url('../static/media/weather.png');
 }
 
+.project-mock:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+
 a {
   color: black;
 }
+
 
 /* ===========================================
               MEDIA QUERIES
@@ -138,6 +148,8 @@ a {
      flex-direction: column;
      align-items: center;
      width: 450px;
+     margin-top: 10%;
+     margin-bottom: 10%;
    }
 
    header>h1 {
