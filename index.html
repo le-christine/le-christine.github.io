@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christine Le</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/contact.css">
@@ -54,7 +54,7 @@
 
       <div class="card">
         <div id="postcard-front">
-            <button onClick="flip()" class="send"><i class="fa fa-paper-plane"></i></button>
+            <button ontouchstart="flip()" onClick="flip()" class="send"><i class="fa fa-paper-plane"></i></button>
         </div>
 
         <div id="postcard-back">
@@ -63,7 +63,7 @@
           </div>
 
           <div id="rightbox">
-            <button onClick="flipBack();postAnEmail()" class="send back-send" >Send
+            <button ontouchstart="flipBack();postAnEmail" onClick="flipBack();postAnEmail()" class="send back-send" >Send
             </button>
             <div id="input">
               <input class="userName" type="text" name="name" placeholder="Name">
