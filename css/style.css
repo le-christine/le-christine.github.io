@@ -31,6 +31,10 @@ nav>a {
   padding-right: 20px;
 }
 
+body {
+  width: 100%;
+}
+
 .brand-statement-bg {
   height: 500px;
   background-image: url('../static/media/patterns-png-transparent.png');
