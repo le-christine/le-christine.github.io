@@ -84,10 +84,6 @@ nav>a {
   padding: 0% 2%;
 }
 
-.device-wrapper {
-
-}
-
 .device-row {
   display: flex;
   justify-content: space-around;
@@ -144,6 +140,20 @@ a {
  }
 
  @media only screen and (max-width: 450px) {
+   .brand-statement-bg{
+     width: 100%;
+     height: 300px;
+     background-repeat: repeat;
+   }
+
+   .brand-statement {
+     height: 150px;
+   }
+
+   .brand-statement>h2, .social-links, nav>a {
+     font-size: 20px;
+   }
+
    header {
      flex-direction: column;
      align-items: center;
@@ -156,8 +166,17 @@ a {
      font-size: 40px;
    }
 
-   nav>a {
-     font-size: 20px;
+   .device-row {
+     flex-direction: column;
+     margin: 0% 2%;
    }
 
+
+  .card {
+     display: none;
+   }
+
+   .maincontainer {
+     height: 60%;
+   }
  }
