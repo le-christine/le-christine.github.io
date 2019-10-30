@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -144,6 +148,12 @@ a {
  }
 
  @media only screen and (max-width: 450px) {
+
+   body {
+     width: 100%;
+   }
+
+
    .brand-statement-bg{
      width: 100%;
      height: 300px;
@@ -165,10 +175,16 @@ a {
      width: 100%;
      margin-top: 10%;
      margin-bottom: 10%;
+     text-align: center;
    }
 
    header>h1 {
      font-size: 40px;
+   }
+
+   nav>a {
+     font-size: 15px;
+     padding-right: 15px;
    }
 
    .device-row {
@@ -233,8 +249,14 @@ a {
    }
 
    .back-send {
-     width: 50px;
+    width: 50px;
     height: 50px;
     font-size: 10px;
    }
+
+   .project-mock, .card {
+     width: 100%;
+   }
+
+
  }
