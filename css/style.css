@@ -248,6 +248,10 @@ a {
      font-size: 15px;
    }
 
+   #postcard-front>input {
+     font-size: 128px;
+   }
+
    .back-send {
     width: 50px;
     height: 50px;
