@@ -56,7 +56,7 @@
 
       <div class="card">
         <div id="postcard-front">
-            <input type="submit" value="✈" ontouchstart="flip()" onClick="flip()" class="send"/>
+            <input type="submit" onClick="flip()" class="send"/>
         </div>
 
         <div id="postcard-back">
@@ -65,7 +65,7 @@
           </div>
 
           <div id="rightbox">
-            <input type="submit" value="Send" ontouchstart="flipBack();postAnEmail" onClick="flipBack();postAnEmail()" class="send back-send"/>
+            <input type="submit" value="Send" onClick="flipBack();postAnEmail()" class="send back-send"/>
           </input>
             <div id="input">
               <input class="userName" type="text" name="name" placeholder="Name">
