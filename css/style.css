@@ -134,6 +134,9 @@ a {
   color: black;
 }
 
+.contact-btn {
+  display: none;
+}
 
 /* ===========================================
               MEDIA QUERIES
@@ -193,10 +196,29 @@ a {
    }
 
    .maincontainer {
-     height: 60%;
+     height: 20%;
    }
 
    .card {
+     display: none;
+   }
+
+   .contact-btn {
+     height: 50px;
+     width: 150px;
+     background-color: #4D5466;
+     display: inline;
+     border-radius: 10px;
+   }
+
+   .contact-btn>a {
+     font-size: 15px;
+     color: #E7D79D;
+     font-family: Raleway, sans-serif;
+   }
+
+
+   /* .card {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -252,7 +274,7 @@ a {
     width: 50px;
     height: 50px;
     font-size: 10px;
-   }
+   } */
 
    .project-mock, .card {
      width: 100%;
