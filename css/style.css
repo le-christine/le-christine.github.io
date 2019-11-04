@@ -109,6 +109,36 @@ body {
   top: 20px;
 }
 
+.your-city-cares {
+  background-image: url('../static/media/your-city-cares-mock.png');
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.your-city-cares:hover{
+  opacity: 0.3;
+}
+
+.your-city-cares>p {
+  visibility:hidden;
+}
+
+.your-city-cares:hover p {
+  visibility:visible;
+  font-family: Raleway, sans-serif;
+  color: black;
+  text-shadow: 2px 2px #E7D79D;
+  font-size: 40px;
+  font-weight:bold;
+}
+
+.rock-paper-scissors {
+  background-image: url('../static/media/rock_paper_scissors__2x.png')
+}
+
 .tearoom {
   background-image: url('../static/media/tearoom.png');
 }
