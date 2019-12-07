@@ -1,0 +1,85 @@
+#communitycares {
+  /* background-image: url('../static/media/bw-nyc-skyline.jpeg');
+  background-size: auto;
+  background-repeat: no-repeat; */
+  background: #FBC02D;
+  /* opacity: 50%; */
+  width: 70%;
+  height: 20em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 5em;
+  margin: 0 auto;
+  opacity: 100%;
+  color: white;
+}
+
+
+h4,p {
+  font-family: Raleway, sans-serif;
+  margin: 1%;
+  text-align: justify;
+  width: 70%;
+  line-height: 2em;
+  margin-left: 15%;
+}
+
+.stack {
+  color: gray;
+}
+
+.title, .stack {
+  text-align: center;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+.audience {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr;
+  margin-left: 15%;
+}
+
+.user {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 20em;
+  display: inline-block;
+}
+
+.user-one {
+  background-image: url('../static/media/kate.png');
+}
+
+.user-two {
+  background-image: url('../static/media/student.png');
+}
+
+hr {
+  width: 70%;
+}
+
+.audience-blurb {
+  margin: 0;
+  grid-column: 1/ span 2;
+}
+
+.challengeimg {
+  background-image: url('../static/media/design-challenge.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100%;
+  height: 30em;
+  margin-left: 15%;
+}

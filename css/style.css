@@ -247,65 +247,6 @@ a {
      font-family: Raleway, sans-serif;
    }
 
-
-   /* .card {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   }
-
-
-   #postcard-front, #postcard-back {
-     width: 300px;
-     height: 250px;
-   }
-
-   .send{
-     width: 10%;
-     height: 10%;
-     margin: 10px;
-   }
-
-   .fa-paper-plane {
-   	font-size: 10px;
-   }
-
-   #postcard-back {
-     display: flex;
-     flex-direction: column;
-   }
-
-   textarea {
-     width: 250px;
-     height: 100px;
-     margin-top: 10px;
-     border: 1px solid black;
-     font-size: 15px;
-     overflow: auto;
-   }
-
-   #rightbox {
-     width: 250px;
-     height: 100px;
-     float: none;
-   }
-
-   #input {
-     padding: 0;
-   }
-
-   #input>input{
-     width: 50px;
-     width: 100px;
-     font-size: 15px;
-   }
-
-   .back-send {
-    width: 50px;
-    height: 50px;
-    font-size: 10px;
-   } */
-
    .project-mock, .card {
      width: 100%;
    }
